@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fictional Product Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        
+        header {
+            background: #2a2a72;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        /* Hover effect only on the paragraph */
+        
+        .hover-subheader:hover {
+            color: red;
+            cursor: pointer;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .product-description {
+            background: white;
+            padding: 20px;
+            border: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        form {
+            background: white;
+            padding: 20px;
+            border: 2px solid #ddd;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        form input[type="submit"] {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 600px) {
+            .cta-button,
+            form input[type="submit"] {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SmartHydrate™ Bottle</h1>
+        <p class="hover-subheader">Stay hydrated with technology that tracks your water intake in real-time!</p>
+    </header>
+
+    <main class="container">
+        <section class="product-description">
+            <h2>Why SmartHydrate?</h2>
+            <p>SmartHydrate™ is your personal hydration coach. With LED reminders, a mobile app sync, and eco-friendly design, it's the smartest way to stay refreshed all day long.</p>
+            <a href="#" class="cta-button">Buy Now</a>
+        </section>
+
+        <section class="newsletter-form">
+            <h2>Join Our Newsletter</h2>
+            <form aria-label="Newsletter Signup Form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                <label>
+          <input type="checkbox" name="agree" required />
+          I agree to receive emails about product updates.
+        </label>
+
+                <input type="submit" value="Subscribe" />
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
